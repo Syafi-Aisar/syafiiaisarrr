@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience</title>
+    <link rel="stylesheet" href="experience.css">
+</head>
+<body>
+
+    <video class="video-background" autoplay muted loop>
+        <source src="bgexp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h2>Welcome to My Website!!</h2>
+        </div>
+        <ul class="navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>My Experience</h1>
+        <p>Here are some of the experiences I've had in my journey.</p>
+
+        <div class="gallery">
+            <div class="gallery-item" id="image1">
+                <img src="buruh.jpg" alt="Experience 1">
+                <div class="image-title">Construction Worker</div>
+                <div class="caption">After finishing my SPM in 2022, I joined Tukul Besi Contractor as a part-time worker, with Sundays off. I was assigned to the electrical and plumbing teams, where I received hands-on training, starting from the basics until I became skilled in the tasks assigned to me.</div>
+            </div>
+        
+            <div class="gallery-item" id="image2">
+                <img src="hotel.jpg" alt="Experience 2">
+                <div class="image-title">Waiter at Hotel</div>
+                <div class="caption">I worked as a part-time waiter at Bangi Golf Resort Hotel, assisting in both the banquet department and Fantasia Restaurant. I took on this role during my semester breaks, earning an hourly wage of RM10.</div>
+            </div>
+        
+            <div class="gallery-item" id="image3">
+                <img src="intern.jpg" alt="Experience 3">
+                <div class="image-title">Internship</div>
+                <div class="caption">I completed my internship at the Hulu Langat District Education Office, where I worked in the office sector of the Learning Department. During my two-month training, I learned how to manage files and handle office administration. My internship was supervised by the Director of the Hulu Langat District Education Office, Mr. Zaiazman.</div>
+            </div>
+        
+            <div class="gallery-item" id="image4">
+                <img src="fp.jpg" alt="Experience 4">
+                <div class="image-title">FoodPanda Rider</div>
+                <div class="caption">I am actively working as a FoodPanda rider this semester, taking on shifts during my free time or when I don’t have classes. Using my Yamaha NVX motorcycle, I’m able to earn extra pocket money, which helps me support myself and ease the financial burden on my family.</div>
+            </div>
+        </div>
+        
+</div>
+
+        </div>
+    </div>
+
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                galleryItems.forEach(el => {
+                    el.classList.remove('active');
+                    el.querySelector('.caption').classList.remove('show');
+                });
+                
+                const caption = this.querySelector('.caption');
+                this.classList.add('active');
+                caption.classList.add('show');
+            });
+        });
+    </script>
+
+</body>
+</html>

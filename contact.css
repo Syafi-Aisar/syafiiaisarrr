@@ -1,0 +1,159 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    background-image: url('awan.jpg'); /* Gantikan dengan laluan gambar anda */
+    background-size: cover; /* Menjaga gambar agar memenuhi keseluruhan layar */
+    background-position: center center; /* Memastikan gambar diletakkan di tengah */
+    background-attachment: fixed; /* Membuat latar belakang tetap apabila halaman digulung */
+    color: black; /* Menetapkan warna teks agar mudah dibaca */
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(30, 30, 47, 0.9);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left a {
+    font-size: 24px;
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.navbar-left .back-home-button i {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-left .back-home-button:hover i {
+    color: #2575fc; /* Change icon color on hover */
+}
+
+.navbar-left h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for content */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    z-index: 1;
+}
+
+/* Contact information */
+.contact-info {
+    width: 50%;
+}
+
+.contact-methods h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-methods ul {
+    list-style: none;
+}
+
+.contact-methods ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-methods ul li a {
+    text-decoration: none;
+    color: #2575fc;
+}
+
+.contact-methods ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Image */
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+.contact-form {
+    width: 50%;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form button:hover {
+    background-color: #1e4cb8;
+}
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1.5s ease-in-out;
+}

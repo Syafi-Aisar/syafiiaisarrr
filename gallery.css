@@ -1,0 +1,168 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e2f;
+    padding: 15px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-left h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic; /* Membuatkan tulisan miring */
+    color: #00ffee; /* Gantikan dengan warna pilihan anda */
+    font-family: 'Brush Script MT', cursive; /* Gunakan font berangkai dan cantik */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Bayang-bayang teks untuk kesan lebih cantik */
+    letter-spacing: 1px; /* Menambah ruang antara huruf */
+}
+
+.navbar-right {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-right li {
+    display: inline-block;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+}
+
+.navbar-right a:hover {
+    background-color: #2575fc;
+    border-radius: 4px;
+}
+
+body {
+    background: linear-gradient(135deg, #FFFFFF, #F0E68C); /* Gradien dari putih ke khaki */
+    color: black; /* Teks hitam supaya lebih mudah dibaca di latar belakang ini */
+}
+
+/* Radio Buttons (Hidden) */
+input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Top Content */
+.top-content {
+    background: linear-gradient(135deg, #151b54, #105894);
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #ffffff;
+}
+
+label:hover {
+    color: #007bff;
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Photo Card */
+.pic {
+    width: calc(25% - 20px);
+    height: 230px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: none; /* Initially hidden */
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.pic:hover img {
+    transform: scale(1.1); /* Zoom Effect */
+}
+
+/* Input Filtering Logic */
+#check1:checked ~ .container .photo-gallery .pic {
+    display: block;
+}
+
+#check2:checked ~ .container .photo-gallery .family {
+    display: block;
+}
+
+#check3:checked ~ .container .photo-gallery .friends {
+    display: block;
+}
+
+#check4:checked ~ .container .photo-gallery .achievement {
+    display: block;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1.5s ease-in-out;
+}

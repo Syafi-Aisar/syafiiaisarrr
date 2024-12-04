@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <img src="logop.png" class="logo">
+
+            <ul>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3>Hi, I'm <span>Muhammad Syafi Aisar</span>.</h3>
+            <h1><span>MY</span> POR<span>TFO</span>LIO <span>WEB</span>SITE</h1>
+            <h3>Web designer and developer from UiTM Segamat, Johor.
+                I create <br> websites for my individual assignment for <br> IMD318. </h3>
+            <a href="https://wa.link/e9lizn">Hire me</a>
+        </div>
+
+        <div class="image">
+            <img src="syafip.png" class="syafi">
+        </div>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/messi.syafi/"><ion-icon name="logo-facebook"></ion-icon</a>       
+            <a href="https://www.instagram.com/syafiiaisarr/profilecard/?igsh=cGgxdjU0aDlxNG9n"><ion-icon name="logo-instagram"></ion-icon</a>
+            <a href="https://www.tiktok.com/@sadyeagarr?_t=8rbjr5FuItd&_r=1"><ion-icon name="logo-tiktok"></ion-icon</a>
+            <a href="https://wa.me/01136812846"><ion-icon name="logo-whatsapp"></ion-icon</a>
+        </div>
+    </div>
+    
+    <div class="clock" id="clock">00:00:00</div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+        updateClock(); // Call once to avoid initial delay
+    </script>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
