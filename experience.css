@@ -16,7 +16,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Pastikan video dan elemen lain tidak melimpah */
+    overflow: hidden; 
 }
 
 /* Background Video Styling */
@@ -26,17 +26,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Pastikan video mengisi seluruh skrin */
-    z-index: -1; /* Letakkan video di belakang elemen lain */
+    object-fit: cover;
+    z-index: -1; 
 }
 
-/* Content Styling (di atas video) */
 .content {
     position: relative;
-    z-index: 1; /* Pastikan konten berada di atas video */
+    z-index: 1; 
     color: white;
     text-align: center;
-    padding-top: 20vh; /* Memberikan jarak dari atas */
+    padding-top: 20vh; 
 }
 
 h1 {
@@ -60,10 +59,10 @@ p {
     color: white;
     position: sticky;
     top: 0;
-    left: 0;  /* Pastikan navbar bermula dari kiri */
-    right: 0; /* Pastikan navbar berakhir di kanan */
+    left: 0; 
+    right: 0; 
     z-index: 1000;
-    width: 100%; /* Pastikan navbar memenuhi lebar penuh */
+    width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -120,8 +119,7 @@ p {
     max-width: 1200px;
     margin: auto;
     text-align: center;
-    padding-top: 80px;  /* Menambah padding untuk memberi ruang kepada navbar sticky */
-}
+    padding-top: 80px;  
 
 h1 {
     font-size: 36px;
@@ -156,15 +154,14 @@ p {
     margin-bottom: 30px;
 }
 
-/* Gambar penuh tanpa ruang kosong (Menggunakan object-fit: cover) */
+
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Gambar memenuhi ruang sepenuhnya tanpa ruang kosong */
+    object-fit: cover; 
     transition: transform 0.5s ease;
 }
 
-/* Title Gambar */
 .image-title {
     font-size: 18px;
     color: #333;
@@ -184,7 +181,6 @@ p {
     transition: all 0.3s ease-in-out;
 }
 
-/* Hover Effects on Gallery Item */
 .gallery-item:hover {
     transform: scale(1.05);
 }
@@ -194,7 +190,6 @@ p {
     transform: translateX(-50%) translateY(-5px);
 }
 
-/* Caption Styling - Positioned Below the Image */
 .caption {
     position: absolute;
     bottom: -40px;
@@ -221,11 +216,10 @@ p {
 
 /* Active State for Selected Image (Zoom In Effect) */
 .gallery-item.active img {
-    transform: scale(1.5); /* Zoom in the image when clicked */
+    transform: scale(1.5); 
     transition: transform 0.5s ease-in-out;
 }
 
-/* Gambar yang tidak aktif akan normal */
 .gallery-item:not(.active) img {
     filter: brightness(1);
 }
