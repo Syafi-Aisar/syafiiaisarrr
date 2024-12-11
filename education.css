@@ -12,17 +12,17 @@ body{
 }
 
 body {
-    background-image: url('backg.jpg'); /* Gantikan dengan laluan gambar anda */
-    background-size: cover; /* Menjaga gambar agar memenuhi keseluruhan layar */
-    background-position: center center; /* Memastikan gambar diletakkan di tengah */
-    background-attachment: fixed; /* Membuat latar belakang tetap apabila halaman digulung */
-    color: #ffd700;/* Menetapkan warna teks agar mudah dibaca */
+    background-image: url('backg.jpg'); \
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;  
+    color: #ffd700; 
 }
 
 /* Style for content that sits on top of the video */
 .content {
     position: relative;
-    z-index: 1; /* Ensures the content stays on top of the video */
+    z-index: 1;  
     text-align: center;
     color: rgb(0, 0, 0);
     padding: 50px;
@@ -52,8 +52,8 @@ body {
 
 .navbar-left {
     display: flex;
-    align-items: center; /* Menyusun elemen-elemen secara vertikal tengah */
-    gap: 15px; /* Ruang antara elemen-elemen dalam navbar-left */
+    align-items: center;  
+    gap: 15px;  
 }
 
 .navbar-left h2 {
@@ -68,8 +68,8 @@ body {
 }
 
 .navbar-left audio {
-    width: 100px; /* Mengatur lebar audio player */
-    height: auto; /* Menjaga ratio lebar dan tinggi */
+    width: 100px;  
+    height: auto;  
 }
 
 .navbar-right {
@@ -258,7 +258,7 @@ body {
     border-radius: 8px;
     font-size: 14px;
     text-align: center;
-    display: none; /* Initially hidden */
+    display: none; 
     z-index: 10;
 }
 
